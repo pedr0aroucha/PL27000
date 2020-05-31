@@ -11,3 +11,5 @@ pip install pymysql
 python manage migrate
 
 python manage.py runserver
+
+Na pasta DRF no arquivo settings.py informe seus dados do BD MySQL 
