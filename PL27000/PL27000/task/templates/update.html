@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<title>Tarefas</title>
+	
+	<div class="container-fluid-container-sm">
+		
+		<div class="row">
+			
+			<div class="col-6 m-auto">
+		
+				<h3>Editar</h3>
+
+				<form method="post"> {% csrf_token %}
+
+					<!-- Nome da tarefa -->
+
+					<div class="input-group mb-3">
+						
+						<div class="input-group-prepend">
+					    	<span class="input-group-text">Tarefa</span>
+				  		</div>
+
+						<input type="text" name="name" class="form-control" value="{{ task.name }}">
+
+					</div>
+
+					<!-- Input do prazo da tarefa -->
+
+					<div class="input-group mb-3">
+						
+						<div class="input-group-prepend">
+					    	<span class="input-group-text" >Prazo</span>
+				  		</div>
+
+						<input type="date" name="lastday" class="form-control" required="" value="{{ task.lastday }}" >
+
+					</div>					
+					
+					<!-- Input da descrição -->
+
+					<div class="input-group">
+
+					 	<div class="input-group-prepend">
+					    	<span class="input-group-text">Descrição</span>
+					  	</div>
+
+					  	<textarea class="form-control" name="description">{{ task.description }}</textarea>
+
+					</div>
+
+					<input name="user" value="{{ user.id }}" hidden>
+
+					<!-- Checkbox de tarefa concluída e lembrete de tarefas -->
+
+					<div class="form-group form-check">
+					
+						{% if task.taskok == True %}
+						
+							<input type="checkbox" class="form-check-input" id="exampleCheck1" name="taskok" checked>
+						
+						{% else %}
+						
+							<input type="checkbox" class="form-check-input" id="exampleCheck1" name="taskok">
+						
+						{% endif %}
+						
+						<label class="form-check-label" for="exampleCheck1">Concluído</label>
+
+						<br>
+
+						{% if task.remember_me == True %}
+						
+							<input type="checkbox" class="form-check-input" id="exampleCheck1" name="taskok" checked>
+						
+						{% else %}
+						
+							<input type="checkbox" class="form-check-input" id="exampleCheck1" name="remeber_me">
+						
+						{% endif %}
+
+						<label class="form-check-label" for="exampleCheck1">Lembre-me</label>
+
+					</div>
+
+					<!-- Botões do form -->
+
+					<br>
+					<button class="btn btn-dark" type="Submit" > Editar </button>
+					<a  class="btn btn-danger" href="/task/delete/{{ task.pk }}">Apagar</a>
+
+				</div>
+
+			</form>
+			
+		</div>
+
+	</div>
+
+{% endblock %}

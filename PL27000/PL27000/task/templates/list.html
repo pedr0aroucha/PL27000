@@ -1,0 +1,47 @@
+{% extends "base.html"  %}
+
+{% block content %}
+
+	<title>Tarefas</title>
+
+	<div class="container-fluid-container-sm">
+		
+		<div class="row">
+			
+			<div class="col-4 mx-auto">
+		
+				<h3>Tarefas</h3>
+
+				<div class="list-group">
+
+						{% for task in task_list %}
+
+							{% if user == task.user %}
+
+								<a href="/task/update/{{ task.pk }}" class="list-group-item list-group-item-action list-group-item-dark">
+									<strong>{{ task.name }}</strong> - {{ task.lastday }}
+
+									{% if task.taskok == True %}
+
+										/ <i class="fa fa-check"></i>
+
+									{% endif %}
+
+								</a>
+
+							{% endif %}
+
+						{% endfor %}
+
+				</div>
+
+				<br>
+				<a class="btn btn-dark" href="/task/create/">Adicionar Tarefa</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+{% endblock %}

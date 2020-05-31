@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container-fluid-container-sm" action="/login">
+
+        <div class="row">
+            
+            <div class="col-4 m-auto">
+              
+                <form method="post" class="form-group">{% csrf_token %}
+
+                    <input class="form-control my-1" type="username" id="id_username" name="username" placeholder="Nome de usuário">
+                    
+                    <input class="form-control my-1" type="password" id="id_password1" name="password1" placeholder="Digite sua senha">
+                    
+                    <input class="form-control my-1" type="password" id="id_password2" name="password2" placeholder="Digite sua senha novamente">
+
+                    <center>
+                        
+                        <button class="btn btn-dark" type="submit" > Continuar </button>
+
+                    </center>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {{ form.errors }}
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<title>Tarefas</title>
+
+	<div class="container-fluid-container-sm">
+		
+		<div class="row">
+			
+			<div class="col-6 m-auto">
+		
+				<h3>Adicionar</h3>
+
+				<form method="post"> {% csrf_token %}
+
+					<div class="input-group mb-3">
+						
+						<div class="input-group-prepend">
+					    	<span class="input-group-text">Tarefa</span>
+				  		</div>
+
+						<input type="text" name="name" placeholder="Correr" class="form-control" required="" >
+
+					</div>
+
+					<div class="input-group mb-3">
+						
+						<div class="input-group-prepend">
+					    	<span class="input-group-text" >Prazo</span>
+				  		</div>
+
+						<input type="date" name="lastday" class="form-control" required="" >
+
+					</div>
+					
+					<div class="input-group">
+
+					 	<div class="input-group-prepend">
+					    	<span class="input-group-text">Descrição</span>
+					  	</div>
+
+					  	<textarea class="form-control" name="description" ></textarea>
+
+					</div>
+
+					<input name="user" value="{{ user.id }}" hidden>
+
+					<br>
+					<button class="btn btn-dark" type="Submit" > Adicionar </button>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+{% endblock %}
