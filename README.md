@@ -10,10 +10,6 @@ Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
 
 pip install requirements.txt
 
-python manage makemigrations core
-
-python manage migrate core
-
 python manage migrate
 
 python manage.py runserver
