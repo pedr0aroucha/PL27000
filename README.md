@@ -2,15 +2,17 @@
 
 !!! Esse projeto está em desenvolvimento, e tem como público alvo os estudantes. E o objetivo ajudo-los a se organizar. !!!
 
-# Feito com:
+### Feito com:
 
 Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
 
-# Segue os comandos para inicializar a aplicação
+##### Segue os comandos para inicializar a aplicação
 
-pip install django
+pip install requirements.txt
 
-pip install pymysql
+python manage makemigrations core
+
+python manage migrate core
 
 python manage migrate
 
