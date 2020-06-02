@@ -8,7 +8,7 @@ Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
 
 ##### Segue os comandos para inicializar a aplicação
 
-pip install requirements.txt
+pip install -r requirements.txt
 
 python manage migrate
 
