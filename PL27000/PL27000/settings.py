@@ -67,9 +67,9 @@ WSGI_APPLICATION = 'PL27000.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '',
+        'NAME': 'django',
         'USER': '',
-        'PASSWORD': '',
+        'PASSWORD': 'pedr0lk5',
         'HOST':'',
         'PORT': '',
     }
