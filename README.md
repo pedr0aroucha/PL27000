@@ -3,7 +3,8 @@
 !!! Esse projeto está em desenvolvimento, e tem como público alvo os estudantes. E o objetivo ajudo-los a se organizar. !!!
 
 # Feito com:
-Bootstrap 4(HTML, CSS e JAVASCRIPT) e  Django(Python)
+
+Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
 
 # Segue os comandos para inicializar a aplicação
 
