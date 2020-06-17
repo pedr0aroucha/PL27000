@@ -13,7 +13,7 @@ SECRET_KEY = 'wp6az1y$-#1emx$#(b_ko2^%6fmeq^jn@$0pi#78-^^q&l=v=v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['c1529d33c7d3.ngrok.io', 'localhost']
 
 
 # Application definition
@@ -69,7 +69,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django',
         'USER': 'pedro',
-        'PASSWORD': 'pedr0lk',
+        'PASSWORD': 'pedr0lk5',
         'HOST':'',
         'PORT': '',
     }

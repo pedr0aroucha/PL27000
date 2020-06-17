@@ -1,26 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-body {
+* {
 	margin: 0;
 	padding: 0;
 	font-family: 'Share Tech Mono';
 	
-	background-image: url('../img/background.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-attachment: fixed;
 }
 
-div.div {
-	background: rgb(255,255,255);
-	background: linear-gradient(0deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 100%); 
-}
-
-div.container-fluid-container-sm {
-	height: 85vh;
-}
-
-div.container-fluid-container {
+div.container {
 	height: 100vh;
 }
 
@@ -32,22 +19,29 @@ div.container-fluid-container {
 	padding-top: 5%;
 }
 
+.navbar {
+  background: black;
+  margin-bottom: 20px;
+}
+
+.collapse {
+  margin-left: 40%;
+}
+
 a.nav-link {
-	color: black;
+	color: #fff;
 	font-size: 20px;
-	margin-right: 55px;
+  margin-right: 55px;
 }
 
 a.nav-link:hover {
-	border-bottom: solid black;
-	margin-top: -2px;
+  color: black;
+  background: white;
+  border-radius: 3px;
 }
 
 a.navbar-brand {
- 	background: rgb(0,0,0);
-	background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
 	color: white;
-	padding: 5px;
 	border-radius: 3px;
 	font-size: 30px;
 }
@@ -71,7 +65,7 @@ button.navbar-toggler {
 
 footer {
 	position: fixed;
-	width: 100%;
+  width: 100%;
 	bottom: 0;
 	background-color: black;
 }
@@ -80,6 +74,10 @@ footer i {
 	color: white;
 }
 
-footer i:hover {
-	text-decoration: none;
+footer a:hover {
+  text-decoration: none;
+}
+
+#dropdownUser {
+  text-transform: uppercase;
 }
