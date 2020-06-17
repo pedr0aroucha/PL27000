@@ -8,10 +8,12 @@ Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
 
 ### Segue os comandos para inicializar a aplicação
 
-Na pasta PL27000 no arquivo settings.py informe seus dados do BD MySQL 
+1. Na pasta PL27000 no arquivo settings.py informe seus dados do BD MySQL 
 
-pip install -r requirements.txt
+2. create database django;
 
-python manage migrate
+3. pip install -r requirements.txt
 
-python manage.py runserver
+4. python manage migrate
+
+5. python manage.py runserver
