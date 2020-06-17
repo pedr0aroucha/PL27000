@@ -46,7 +46,6 @@ def update_view(request, pk):
 @login_required(login_url='/login')
 def delete_view(request, pk):
     task = Task.objects.get(id=pk)
-    if request.POST:
-        task.delete()
-        return redirect('/task/list')
-    return render(request, "delete.html", {"task": task})
+    task.delete()
+    
+    return redirect('/task/list')
