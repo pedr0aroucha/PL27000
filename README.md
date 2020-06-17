@@ -17,3 +17,9 @@ Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
 4. python manage migrate
 
 5. python manage.py runserver
+
+### Se a tabela de alguma app não for criada rode os comandos:
+
+1. python manage.py makemigrations 'app'
+
+2. python manage.py migrate 'app'
