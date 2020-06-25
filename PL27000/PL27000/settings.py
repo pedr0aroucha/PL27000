@@ -13,7 +13,7 @@ SECRET_KEY = 'wp6az1y$-#1emx$#(b_ko2^%6fmeq^jn@$0pi#78-^^q&l=v=v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['c1529d33c7d3.ngrok.io', 'localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -25,7 +25,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ckeditor',
     'index',
     'PL27000.task'
 ]
@@ -66,12 +65,9 @@ WSGI_APPLICATION = 'PL27000.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST':'',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
     }
 }
 

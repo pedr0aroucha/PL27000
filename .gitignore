@@ -1,3 +1,5 @@
+.gitignore
+/venv/*
 /PL27000/index/__pycache__/*
 /PL27000/PL27000/__pycache__/*
 /PL27000/PL27000/task/__pycache__/*
