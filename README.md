@@ -23,5 +23,5 @@
     <li> <strong> python manage.py makemigrations 'nomeDaApp' </strong></li>
     <li><strong> python manage.py migrate 'nomeDaApp' </strong></li>
   </ul>
-  <i>Iniciando o servidor</i>
+  <i>Iniciando a App</i>
   <li><strong> python manage.py runserver </strong></li>
