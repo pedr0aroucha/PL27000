@@ -2,7 +2,8 @@
 
 ### 🛠 TECHNOLOGIES USED
 <ul>
-  <li>Typescript - NodeJS </li>
+  <li>Python - Django </li>
+  <li>HTML/CSS</li>
 </ul>
 
 ### 🧰 DEPENDENCIES
