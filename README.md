@@ -1,27 +1,44 @@
-<h1>Organization System</h1>
+# readme
 
-<h3>Feito com :wrench: </h3>
+### 🛠 TECHNOLOGIES USED
 <ul>
-  <li>Python</li>
-  <ul>
-    <li>Django</li>
-  </ul>
-  <li>HTML/CSS</li>
-  <li>Bootsrap</li>
+  <li>Typescript - NodeJS </li>
 </ul>
 
-<h3>Começando :rocket: </h3>
-
+### 🧰 DEPENDENCIES
 <ul>
-  <i>Instalando as dependências</i>
-  <li> <strong> pip install -r requirements.txt </strong></li>
-  <i>Entre na pasta PL27000</i>
-  <br>
-  <i>Criando e sincronizando com o BD</i>
-  <li><strong> python manage.py migrate </strong></li>
-  <ul>
-    <li> <strong> python manage.py makemigrations 'nomeDaApp' </strong></li>
-    <li><strong> python manage.py migrate 'nomeDaApp' </strong></li>
-  </ul>
-  <i>Iniciando a App</i>
-  <li><strong> python manage.py runserver </strong></li>
+  <li> <a href="https://www.python.org/downloads/"> Python </a> </li>
+</ul>
+
+### 🚀 GET STARTING
+
+1. Make a clone :
+
+```sh
+  $ git clone https://github.com/pedr0aroucha/organization_system.git
+```
+
+2. Execute the aplication:
+
+```sh
+  # enter the folder
+  $ cd organization_system
+
+  # starting the virtual development environment
+  $ python3 -m venv .env
+  $ source .env/bin/activate
+
+  # Install the dependencies
+  $ pip install -r requirements.txt
+
+  # enter the folder
+  $ cd PL27000
+  
+  # creating and synchronizing the database
+  $ python manage.py migrate
+  $ python manage.py makemigrations && python manage.py migrate
+
+  # Start the aplication
+  $ python manage.py runserver
+
+```
