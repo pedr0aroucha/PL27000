@@ -32,13 +32,6 @@
   # Install the dependencies
   $ pip install -r requirements.txt
 
-  # enter the folder
-  $ cd PL27000
-  
-  # creating and synchronizing the database
-  $ python manage.py migrate
-  $ python manage.py makemigrations && python manage.py migrate
-
   # Start the aplication
   $ python manage.py runserver
 
