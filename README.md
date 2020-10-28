@@ -1,15 +1,9 @@
-# readme
-
 ### 🛠 TECHNOLOGIES USED
-<ul>
-  <li>Python - Django </li>
-  <li>HTML/CSS</li>
-</ul>
+- Python - Django
+- HTML/CSS - Bootstrap
 
 ### 🧰 DEPENDENCIES
-<ul>
-  <li> <a href="https://www.python.org/downloads/"> Python </a> </li>
-</ul>
+- <a href="https://www.python.org/downloads/"> Python </a>
 
 ### 🚀 GET STARTING
 
